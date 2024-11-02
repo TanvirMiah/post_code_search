@@ -9,27 +9,18 @@ from datetime import datetime
 load_dotenv()
 
 # Initialize connection
-conn = duckdb.connect('.\\db\\postcodes.duckdb')
+conn = duckdb.connect('./db/postcodes.duckdb')
 
-directory = os.fsdecode('.\\data\\constituency_postcodes')
+directory = os.fsdecode('./data/constituency_postcodes')
 pattern = r'^(.*?)\s+postcodes'
 
 print("Connected. Creating constituencies database.")
-conn.sql("CREATE TABLE IF NOT EXISTS constituency AS SELECT * FROM '.\\data\\UK constituency postcodes 2024.csv'")
+conn.sql("CREATE TABLE IF NOT EXISTS constituency AS SELECT * FROM './data/UK constituency postcodes 2024.csv'")
 print("Constituency database created successfully.")
 print("Creating and inserting postcode database.")
 
-def convert_datetime(date_str):
-    if pd.isna(date_str):
-        return None
-    try:
-        # Parse the date string and convert to ISO format
-        return pd.to_datetime(date_str).strftime('%Y-%m-%d %H:%M:%S')
-    except:
-        return None
-
 def load_postcode_csvs(directory, connection):
-    cons_df = pd.read_csv('.\\data\\UK constituency postcodes 2024.csv')
+    cons_df = pd.read_csv('./data/UK constituency postcodes 2024.csv')
     print("creating table")
     
     # Create table using the connection object
@@ -62,17 +53,11 @@ def load_postcode_csvs(directory, connection):
     
     csv_files = glob.glob(os.path.join(directory, '*csv'))
     for file in csv_files:
-        print(f"Processing file: {file}")
+        #print(f"Processing file: {file}")
         constituency_name = os.path.basename(file).split('.')[0]
         
         # Read CSV and convert date columns
         df = pd.read_csv(file).drop(columns=['Introduced', 'Terminated'])
-
-        # Convert datetime columns to correct format
-        if 'introduced' in df.columns:
-            df['introduced'] = df['introduced'].apply(convert_datetime)
-        if 'terminated' in df.columns:
-            df['terminated'] = df['terminated'].apply(convert_datetime)
         
         # Replace any remaining NaT values with NULL
         df = df.replace({pd.NaT: None})
@@ -95,7 +80,7 @@ def load_postcode_csvs(directory, connection):
         try:
             # Use the connection object to insert data
             connection.sql("INSERT INTO postcodes_list SELECT * FROM df")
-            print(f"Inserted data for {constituency_name}")
+            #print(f"Inserted data for {constituency_name}")
         except Exception as e:
             print(f"Error inserting data for {constituency_name}: {str(e)}")
             # Optionally, you might want to continue with the next file

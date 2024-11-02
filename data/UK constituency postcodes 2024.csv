@@ -1,4 +1,4 @@
-﻿Code,Constituency,Latitude,Longitude,Postcodes,Active Postcodes,MP,Party
+Code,Constituency,Latitude,Longitude,Postcodes,Active Postcodes,MP,Party
 W07000081,Aberafan Maesteg,51.5989,-3.74079,2753,2217,Stephen Kinnock,Labour
 S14000060,Aberdeen North,57.170101,-2.1438,6499,2980,Kirsty Blackman,Scottish National Party
 S14000061,Aberdeen South,57.132801,-2.12467,8034,3380,Stephen Flynn,Scottish National Party
@@ -12,13 +12,13 @@ W07000082,Alyn and Deeside,53.193298,-3.05751,3307,2769,Mark Tami,Labour
 E14001066,Amber Valley,53.0481,-1.38889,3253,1993,Linsey Farnsworth,Labour
 S14000065,Angus and Perthshire Glens,56.6385,-3.12277,4729,4087,Dave Doogan,Scottish National Party
 S14000066,Arbroath and Broughty Ferry,56.519001,-2.77013,3479,2948,Stephen Gethins,Scottish National Party
-S14000067,Argyll Bute and South Lochaber,56.0769,-5.21812,4481,3596,Brendan O'Hara,Scottish National Party
+S14000067,"Argyll, Bute and South Lochaber",56.0769,-5.21812,4481,3596,Brendan O'Hara,Scottish National Party
 E14001067,Arundel and South Downs,50.937901,-0.546666,5203,3702,Andrew Griffith,Conservative
 E14001068,Ashfield,53.111301,-1.26349,2407,2054,Lee Anderson,Reform UK
 E14001069,Ashford,51.141602,0.915093,4407,2769,Sojan Joseph,Labour
 E14001070,Ashton-under-Lyne,53.4856,-2.11303,3938,2615,Angela Rayner,Labour
 E14001071,Aylesbury,51.822601,-0.790751,4346,2815,Laura Kyrke-Smith,Labour
-S14000107,Ayr Carrick and Cumnock,55.406898,-4.58137,3785,3050,Elaine Stewart,Labour
+S14000107,"Ayr, Carrick and Cumnock",55.406898,-4.58137,3785,3050,Elaine Stewart,Labour
 E14001072,Banbury,52.019299,-1.3784,5723,3399,Sean Woodcock,Labour
 W07000083,Bangor Aberconwy,53.2271,-3.86968,4481,3667,Claire Hughes,Labour
 E14001073,Barking,51.538502,0.106956,2632,1825,Nesil Caliskan,Labour
@@ -39,7 +39,7 @@ N05000002,Belfast North,54.634499,-5.94057,3233,2265,John Finucane,Sinn Féin
 N05000003,Belfast South and Mid Down,54.568802,-5.92585,4684,2737,Claire Hanna,Social Democratic & Labour Party
 N05000004,Belfast West,54.583401,-5.98394,2373,1922,Paul Maskey,Sinn Féin
 E14001085,Bermondsey and Old Southwark,51.4972,-0.076019,5834,3314,Neil Coyle,Labour
-S14000108,Berwickshire Roxburgh and Selkirk,55.594002,-2.61229,4507,3887,John Lamont,Conservative
+S14000108,"Berwickshire, Roxburgh and Selkirk",55.594002,-2.61229,4507,3887,John Lamont,Conservative
 E14001086,Bethnal Green and Stepney,51.5224,-0.059222,5152,2499,Rushanara Ali,Labour
 E14001087,Beverley and Holderness,53.803902,-0.295555,3330,2720,Graham Stuart,Conservative
 E14001088,Bexhill and Battle,50.8951,0.455658,4224,3059,Dr Kieran Mullan,Conservative
@@ -77,7 +77,7 @@ E14001118,Bradford East,53.8027,-1.7399,4437,2697,Imran Hussain,Labour
 E14001119,Bradford South,53.766102,-1.77301,3385,2858,Judith Cummins,Labour
 E14001120,Bradford West,53.7985,-1.78439,4464,2734,Naz Shah,Labour
 E14001121,Braintree,51.914501,0.557549,5049,3122,Mr James Cleverly,Conservative
-W07000085,Brecon Radnor and Cwm Tawe,52.0079,-3.44935,4235,3588,David Chadwick,Liberal Democrat
+W07000085,"Brecon, Radnor and Cwm Tawe",52.0079,-3.44935,4235,3588,David Chadwick,Liberal Democrat
 E14001122,Brent East,51.555599,-0.243403,3251,2398,Dawn Butler,Labour
 E14001123,Brent West,51.557499,-0.297126,3994,2165,Barry Gardiner,Labour
 E14001124,Brentford and Isleworth,51.473499,-0.341213,4633,2301,Ruth Cadbury,Labour
@@ -106,7 +106,7 @@ E14001145,Bury South,53.541,-2.29113,5418,2625,Christian Wakeford,Labour
 E14001146,Bury St Edmunds and Stowmarket,52.241501,0.811083,4275,3251,Peter Prinsley,Labour
 W07000087,Caerfyrddin,51.893398,-4.16685,4833,4088,Ms Ann Davies,Plaid Cymru
 W07000088,Caerphilly,51.613899,-3.21926,4712,2279,Chris Evans,Labour
-S14000069,Caithness Sutherland and Easter Ross,57.947399,-4.07002,4007,3419,Jamie Stone,Liberal Democrat
+S14000069,"Caithness, Sutherland and Easter Ross",57.947399,-4.07002,4007,3419,Jamie Stone,Liberal Democrat
 E14001147,Calder Valley,53.709202,-1.9277,4834,3897,Josh Fenton-Glynn,Labour
 E14001148,Camborne and Redruth,50.228699,-5.25453,4077,3317,Perran Moon,Labour
 E14001149,Cambridge,52.2048,0.134057,5147,2576,Daniel Zeichner,Labour
@@ -178,7 +178,7 @@ E14001203,Droitwich and Evesham,52.158901,-2.0289,4233,2805,Nigel Huddleston,Con
 E14001204,Dudley,52.5163,-2.10559,3017,2286,Sonia Kumar,Labour
 E14001205,Dulwich and West Norwood,51.445702,-0.097132,2957,1913,Helen Hayes,Labour
 S14000073,Dumfries and Galloway,54.967201,-4.11351,5246,4593,John Cooper,Conservative
-S14000074,Dumfriesshire Clydesdale and Tweeddale,55.311001,-3.39874,4157,3573,David Mundell,Conservative
+S14000074,"Dumfriesshire, Clydesdale and Tweeddale",55.311001,-3.39874,4157,3573,David Mundell,Conservative
 S14000075,Dundee Central,56.471199,-2.98834,4761,3312,Chris Law,Scottish National Party
 S14000076,Dunfermline and Dollar,56.071301,-3.48069,3207,2391,Graeme Downie,Labour
 E14001206,Dunstable and Leighton Buzzard,51.905499,-0.594021,4127,2082,Alex Mayer,Labour
@@ -264,7 +264,7 @@ E14001263,Hamble Valley,50.885101,-1.2879,5136,2571,Paul Holmes,Conservative
 S14000092,Hamilton and Clyde Valley,55.7369,-3.97619,3343,2634,Imogen Walker,Labour
 E14001264,Hammersmith and Chiswick,51.4967,-0.238552,5556,2374,Andy Slaughter,Labour
 E14001265,Hampstead and Highgate,51.553501,-0.173733,4758,2746,Tulip Siddiq,Labour
-E14001266,Harborough Oadby and Wigston,52.554298,-1.04025,3737,2262,Neil O'Brien,Conservative
+E14001266,"Harborough, Oadby and Wigston",52.554298,-1.04025,3737,2262,Neil O'Brien,Conservative
 E14001267,Harlow,51.773998,0.112903,3634,2413,Chris Vince,Labour
 E14001268,Harpenden and Berkhamsted,51.796398,-0.472168,4465,3096,Victoria Collins,Liberal Democrat
 E14001269,Harrogate and Knaresborough,54.000198,-1.51856,4232,2674,Tom Gordon,Liberal Democrat
@@ -301,7 +301,7 @@ E14001299,Hyndburn,53.751801,-2.37297,3041,2343,Sarah Smith,Labour
 E14001300,Ilford North,51.586601,0.077072,2277,1748,Wes Streeting,Labour
 E14001301,Ilford South,51.562,0.088864,3537,1700,Jas Athwal,Labour
 S14000093,Inverclyde and Renfrewshire West,55.926399,-4.72876,3459,2664,Martin McCluskey,Labour
-S14000094,Inverness Skye and West Ross-shire,57.361401,-4.69429,4740,3223,Angus MacDonald,Liberal Democrat
+S14000094,"Inverness, Skye and West Ross-shire",57.361401,-4.69429,4740,3223,Angus MacDonald,Liberal Democrat
 E14001302,Ipswich,52.052601,1.15847,4374,2864,Jack Abbott,Labour
 E14001303,Isle of Wight East,50.6758,-1.16724,3161,2503,Joe Robertson,Conservative
 E14001304,Isle of Wight West,50.700298,-1.34453,3237,2621,Richard Quigley,Labour
@@ -384,9 +384,9 @@ E14001370,Milton Keynes North,52.0704,-0.780329,4515,2745,Chris Curtis,Labour
 E14001371,Mitcham and Morden,51.403,-0.175416,2547,1720,Dame Siobhain McDonagh,Labour
 W07000101,Monmouthshire,51.716499,-2.81862,6310,3298,Catherine Fookes,Labour
 W07000102,Montgomeryshire and Glyndwr,52.706001,-3.26018,4733,4213,Steve Witherden,Labour
-S14000098,Moray West Nairn and Strathspey,57.556,-3.48301,5528,3401,Graham Leadbitter,Scottish National Party
+S14000098,"Moray West, Nairn and Strathspey",57.556,-3.48301,5528,3401,Graham Leadbitter,Scottish National Party
 E14001372,Morecambe and Lunesdale,54.1213,-2.77858,4283,3493,Lizzi Collinge,Labour
-S14000099,Motherwell Wishaw and Carluke,55.774399,-3.92755,2878,2291,Pamela Nash,Labour
+S14000099,"Motherwell, Wishaw and Carluke",55.774399,-3.92755,2878,2291,Pamela Nash,Labour
 S14000027,Na h-Eileanan an Iar,57.976898,-6.70204,2022,977,Torcuil Crichton,Labour
 W07000103,Neath and Swansea East,51.667198,-3.84287,3652,2503,Carolyn Harris,Labour
 E14001373,New Forest East,50.873001,-1.47105,5762,2547,Sir Julian Lewis,Conservative
@@ -439,7 +439,7 @@ E14001412,Nottingham South,52.943298,-1.18508,3770,2155,Lilian Greenwood,Labour
 E14001413,Nuneaton,52.522701,-1.48233,2600,2011,Jodie Gosling,Labour
 E14001414,Old Bexley and Sidcup,51.441601,0.110462,2649,1804,Mr Louie French,Conservative
 E14001415,Oldham East and Saddleworth,53.550499,-2.07481,3934,2831,Debbie Abrahams,Labour
-E14001416,Oldham West Chadderton and Royton,53.541599,-2.13067,3313,2502,Jim McMahon,Labour
+E14001416,"Oldham West, Chadderton and Royton",53.541599,-2.13067,3313,2502,Jim McMahon,Labour
 S14000051,Orkney and Shetland,59.5709,-2.16727,1597,1392,Mr Alistair Carmichael,Liberal Democrat
 E14001417,Orpington,51.376202,0.096566,3120,2134,Gareth Bacon,Conservative
 E14001418,Ossett and Denby Dale,53.6394,-1.58657,3309,2734,Jade Botterill,Labour
@@ -455,7 +455,7 @@ S14000103,Perth and Kinross-shire,56.3536,-3.48447,4543,3300,Pete Wishart,Scotti
 E14001425,Peterborough,52.598999,-0.25834,4898,2610,Andrew Pakes,Labour
 E14001426,Plymouth Moor View,50.4105,-4.14604,2621,2161,Fred Thomas,Labour
 E14001427,Plymouth Sutton and Devonport,50.3773,-4.14243,3643,2622,Luke Pollard,Labour
-E14001428,Pontefract Castleford and Knottingley,53.706501,-1.32327,3357,2641,Yvette Cooper,Labour
+E14001428,"Pontefract, Castleford and Knottingley",53.706501,-1.32327,3357,2641,Yvette Cooper,Labour
 W07000106,Pontypridd,51.583302,-3.36153,3256,2262,Alex Davies-Jones,Labour
 E14001429,Poole,50.723598,-1.96346,3390,2317,Neil Duncan-Jordan,Labour
 E14001430,Poplar and Limehouse,51.508701,-0.029123,4239,2511,Apsana Begum,Labour
@@ -483,7 +483,7 @@ E14001450,Rossendale and Darwen,53.694199,-2.32514,4287,3305,Andy MacNae,Labour
 E14001451,Rother Valley,53.378201,-1.25333,3478,2144,Jake Richards,Labour
 E14001452,Rotherham,53.43,-1.35168,3740,2625,Sarah Champion,Labour
 E14001453,Rugby,52.385399,-1.28019,3247,2603,John Slinger,Labour
-E14001454,Ruislip Northwood and Pinner,51.592899,-0.405806,4169,2439,David Simmonds,Conservative
+E14001454,"Ruislip, Northwood and Pinner",51.592899,-0.405806,4169,2439,David Simmonds,Conservative
 E14001455,Runcorn and Helsby,53.304901,-2.72445,3608,2802,Mike Amesbury,Labour
 E14001456,Runnymede and Weybridge,51.377201,-0.480649,5597,3219,Dr Ben Spencer,Conservative
 E14001457,Rushcliffe,52.899101,-1.10758,2642,2400,James Naish,Labour
@@ -556,7 +556,7 @@ E14001519,Stockton West,54.533001,-1.37069,2698,2438,Matt Vickers,Conservative
 E14001520,Stoke-on-Trent Central,53.012299,-2.17022,4491,3021,Gareth Snell,Labour
 E14001521,Stoke-on-Trent North,53.063499,-2.20249,3100,2352,David Williams,Labour
 E14001522,Stoke-on-Trent South,52.970001,-2.12574,2852,2386,Allison Gardner,Labour
-E14001523,Stone Great Wyrley and Penkridge,52.758598,-2.09528,2851,2479,Sir Gavin Williamson,Conservative
+E14001523,"Stone, Great Wyrley and Penkridge",52.758598,-2.09528,2851,2479,Sir Gavin Williamson,Conservative
 E14001524,Stourbridge,52.4655,-2.13235,3315,2242,Cat Eccles,Labour
 N05000016,Strangford,54.508499,-5.6876,3197,2594,Jim Shannon,Democratic Unionist Party
 E14001525,Stratford and Bow,51.538601,-0.004088,3465,1991,Uma Kumaran,Labour

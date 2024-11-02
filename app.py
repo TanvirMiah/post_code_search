@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import duckdb
 
 app = Flask(__name__)
-conn = duckdb.connect('.\\db\\postcodes.duckdb')
+conn = duckdb.connect('./db/postcodes.duckdb')
 
 @app.route('/')
 def home():
