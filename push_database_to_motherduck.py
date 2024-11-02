@@ -6,7 +6,7 @@ load_dotenv()
 
 # Connect to MotherDuck
 motherduck_token = os.getenv('MOTHERDUCK_TOKEN')
-# Create database if it doesn't exit
+# Create database on Motherduck first called 'postcodes'
 conn = duckdb.connect("md:postcodes")
 print("Connected to Motherduck.")
 
