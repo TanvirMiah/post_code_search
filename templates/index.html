@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Postcode Lookup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success {
+            background-color: #ffffff;
+        }
+        .error {
+            background-color: #ffebee;
+            border: 1px solid #e57373;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #333;
+        }
+        td {
+            font-size: 14px;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .search-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result-count {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Postcode Constituency Lookup</h1>
+    <div class="search-container">
+        <form id="lookup-form">
+            <input type="text" 
+                   id="postcode" 
+                   name="postcode" 
+                   placeholder="Enter postcode"
+                   required>
+            <button type="submit">Look up</button>
+        </form>
+    </div>
+    <div id="result" class="result" style="display: none;"></div>
+
+    <script>
+        function createTable(columns, data) {
+            // Create result count
+            const resultCount = document.createElement('div');
+            resultCount.className = 'result-count';
+            resultCount.textContent = `Found ${data.length} result${data.length !== 1 ? 's' : ''}`;
+            
+            // Create table element
+            const table = document.createElement('table');
+            
+            // Create header row
+            const thead = document.createElement('thead');
+            const headerRow = document.createElement('tr');
+            columns.forEach(column => {
+                const th = document.createElement('th');
+                th.textContent = column.toUpperCase().replace('_', ' ');
+                headerRow.appendChild(th);
+            });
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+            
+            // Create table body
+            const tbody = document.createElement('tbody');
+            data.forEach(row => {
+                const tr = document.createElement('tr');
+                columns.forEach(column => {
+                    const td = document.createElement('td');
+                    td.textContent = row[column] || '';
+                    tr.appendChild(td);
+                });
+                tbody.appendChild(tr);
+            });
+            table.appendChild(tbody);
+            
+            // Create container for count and table
+            const container = document.createElement('div');
+            container.appendChild(resultCount);
+            container.appendChild(table);
+            
+            return container;
+        }
+
+        document.getElementById('lookup-form').onsubmit = async (e) => {
+            e.preventDefault();
+            const postcode = document.getElementById('postcode').value;
+            const resultDiv = document.getElementById('result');
+            
+            try {
+                const response = await fetch('/lookup', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: `postcode=${encodeURIComponent(postcode)}`
+                });
+                
+                const data = await response.json();
+                resultDiv.style.display = 'block';
+                
+                if (response.ok) {
+                    resultDiv.className = 'result success';
+                    resultDiv.innerHTML = ''; // Clear previous results
+                    const tableContainer = createTable(data.columns, data.data);
+                    resultDiv.appendChild(tableContainer);
+                } else {
+                    resultDiv.className = 'result error';
+                    resultDiv.textContent = data.error;
+                }
+            } catch (error) {
+                resultDiv.style.display = 'block';
+                resultDiv.className = 'result error';
+                resultDiv.textContent = 'An error occurred. Please try again.';
+            }
+        };
+    </script>
+</body>
+</html>
