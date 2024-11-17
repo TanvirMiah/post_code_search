@@ -10,6 +10,7 @@ If there are any issues or glitches, please let me know!
 - Motherduck (Optional)
 
 # Get started
+If you are running windows, change the route to folders with '\\'.
 1. Copy or download the repo.
 2. Create a virtual environment and install the requrements txt.
 3. Run ```python initial_loading.py```. This creates the DuckDB file in your './db' folder and loads all the data from the CSVs into the relevant tables. 
