@@ -1,4 +1,6 @@
-Simple app to detect what constituency a postcode is in, as well as the MP, party and ward in the UK. This is a project made to learn the functionality of DuckDB.
+Simple app to detect what constituency a postcode is in, as well as the MP, party and ward in the UK. This is a project made to learn the functionality of DuckDB. 
+
+The main branch is configured to run locally, the publish branch is altered so that it can be hosted on a public facing server.
 
 *This is accurate as of 2024.* 
 
