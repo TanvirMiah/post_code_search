@@ -15,7 +15,7 @@ If there are any issues or glitches, please let me know!
 3. Run ```python initial_loading.py```. This creates the DuckDB file in your './db' folder and loads all the data from the CSVs into the relevant tables. 
 4. Run ```flask --app app run```. This should run the app off your personal computer.
 
-# Pushing data to MotherDuck
+## Pushing data to MotherDuck
 If you want to have an online version of the database, perform the following: 
 1. Create an account on Motherduck.
 2. Create the database in Motherduck by running the SQL command ```CREATE DATABASE postcodes``` in a notebook.
