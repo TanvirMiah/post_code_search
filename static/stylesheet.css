@@ -1,8 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, Helvetica, sans-serif;
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 10px auto;
+    padding: 10px;
+}
+header{
+    text-align: right;
+    font-size: 8pt;
 }
 .result {
     margin-top: 20px;
@@ -71,4 +75,13 @@ button:hover {
     margin-bottom: 10px;
     font-size: 14px;
     color: #666;
+}
+#github-logo{
+    padding-left: 10px;
+}
+#github-title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
 }
