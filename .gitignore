@@ -12,6 +12,7 @@
 *.db-wal
 *.duckdb
 /db
+/data
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
