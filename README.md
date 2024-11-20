@@ -30,6 +30,7 @@ If you want to have an online version of the database, perform the following:
 You can also get a token from MotherDuck and use environment variables to perform this. 
 
 # Things I'd like to add
+- Better error checking - currently minimal error catching.
 - Rather than generating a very long list when searching an incomplete postcode like 'SW1', contain the results into a window and show the first 10 rows before needing to scroll
 - Generate a map using leaflet js to put pinpoints on all the postcodes in a constituency
 - Create other ways to search other things, such as all postcodes in a constituency
